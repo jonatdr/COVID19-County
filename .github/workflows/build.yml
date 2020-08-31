@@ -38,12 +38,12 @@ jobs:
           python -m pip install -r requirements.txt
           
       - name: Execute notebook
-        run: jupyter nbconvert --execute LA_County_Triggers.ipynb
+        run: jupyter nbconvert --execute SB_County_Triggers.ipynb
       
       - name: Update README.md
         run: |-
           timestamp=$(date -u)
-          printf "# COVID-19 data from LA County\n![image1](plots/graph.png)\n![image2](plots/classification.png)\n**Last Updated:** ${timestamp}" > README.md
+          printf "# COVID-19 data from San Bernardino County\n![image1](plots/graph.png)\n![image2](plots/classification.png)\n**Last Updated:** ${timestamp}" > README.md
       
       - name: Commit and push if it changed
         run: |-
@@ -56,4 +56,4 @@ jobs:
           git push
 
       - name: Clean up
-        run: rm us-counties.csv LA_County_Triggers.html
+        run: rm us-counties.csv SB_County_Triggers.html
