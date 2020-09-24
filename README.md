@@ -1,4 +1,4 @@
 # COVID-19 data from San Bernardino County
 ![image1](plots/graph.png)
 ![image2](plots/classification.png)
-**Last Updated:** Thu Sep 24 00:31:08 UTC 2020
+**Last Updated:** Thu Sep 24 06:12:28 UTC 2020
